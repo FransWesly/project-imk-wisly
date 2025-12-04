@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project IMK - WISLY: Sistem Absensi Digital Asrama Wisma Lydia">
+    <title>Project IMK - Home</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: "Trebuchet MS", Trebuchet, sans-serif;
+            background-image: url('wi.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        header {
+            background: #004aad;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #55b57a;
+            opacity: 0.9;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            margin: 30px auto;
+            padding: 50px;
+            max-width: 900px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        .hero h2 {
+            color: #171818;
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .hero p {
+            margin: 0;
+            color: #171818;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #004aad;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            
+            nav {
+                margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            nav a {
+                margin: 0 5px;
+            }
+            
+            .hero {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            
+            .hero h2 {
+                font-size: 22px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Project IMK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="masalah.html">Problem Identification</a>
+            <a href="userresearch.html">User Research</a>
+            <a href="ursd.html">User Requirement Specification Document</a>
+            <a href="design.html">Design</a>
+            <a href="evaluation.html">Evaluation</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>WELCOME TO GROUP 8 IMK<br>FINAL ASSIGNMENT</h2>
+        <br>
+        <p>WISLY adalah aplikasi berbasis website yang dirancang untuk mempermudah proses absensi pada Asrama Wisma Lydia<br>
+        dan sistem ini juga dibuat untuk memenuhi tugas akhir mata kuliah Interaksi Manusia dan Komputer</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 - Kelompok 8 IMK | Sistem Informasi
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design - Prototype Sistem Absensi WISLY">
+    <title>Design</title>
+
+    <style>
+        /* GLOBAL */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Trebuchet MS", Trebuchet, sans-serif;
+            background-image: url('wi.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .wrapper-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 80px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* HEADER */
+        header {
+            background: #004aad;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 25px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #55b57a;
+        }
+
+        /* TITLE */
+        .page-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            color: #222;
+        }
+
+        /* LINK PROTOTYPE */
+        .prototype-links {
+            background-color: #e8f4fd;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 5px solid #004aad;
+        }
+
+        .prototype-links h3 {
+            color: #004aad;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .prototype-links a {
+            display: inline-block;
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px 10px 5px 0;
+            transition: background-color 0.3s;
+        }
+
+        .prototype-links a:hover {
+            background-color: #003580;
+        }
+
+        /* PDF VIEWER */
+        .pdf-viewer {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin-top: 30px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #004aad;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .page-title {
+                font-size: 28px;
+            }
+            
+            header {
+                flex-direction: column;
+                padding: 15px 20px;
+                text-align: center;
+            }
+            
+            nav {
+                margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            nav a {
+                margin: 0 5px;
+            }
+            
+            .prototype-links {
+                padding: 15px;
+            }
+            
+            .prototype-links a {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            .pdf-viewer {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper-page">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Project IMK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="masalah.html">Problem Identification</a>
+            <a href="userresearch.html">User Research</a>
+            <a href="ursd.html">User Requirement Specification Document</a>
+            <a href="design.html">Design</a>
+            <a href="evaluation.html">Evaluation</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1 class="page-title">DESIGN</h1>
+        
+        <!-- LINK PROTOTYPE -->
+        <div class="prototype-links">
+            <h3>Link Prototype Figma</h3>
+            <p>Klik untuk membuka prototype Figma:</p>
+            <ol>
+                <li>
+                    <a href="https://www.figma.com/proto/q3eBx5seASckUxG3vJ2B6h/WISLY?node-id=0-1&t=FW5qm4BMVUsezTRv-1" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Buka Prototype di Figma (Pengelola)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.figma.com/proto/hrOHzLL5iNwDBE9A8lxXJv/WISLY_Pemilik?node-id=0-1&t=yo045HBgwejPoiCa-1" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Buka Prototype di Figma (Pemilik)
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <!-- PDF VIEWER -->
+        <embed 
+            src="Design.pdf"
+            type="application/pdf"
+            class="pdf-viewer">
+            
+        <div style="margin-top: 30px; padding: 20px; background-color: #f8f9fa; border-radius: 8px;">
+            <h3 style="color: #004aad;">Desain Sistem WISLY:</h3>
+            <p>Desain sistem WISLY mencakup:</p>
+            <ul>
+                <li><strong>Sketch</strong> tampilan untuk Pengelola dan Pemilik Asrama</li>
+                <li><strong>Alur ScreenFlow</strong> untuk navigasi sistem</li>
+                <li><strong>Prototype interaktif</strong> di Figma</li>
+                <li><strong>Wireframe</strong> dan layout halaman</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 - Kelompok 8 IMK | Sistem Informasi
+    </footer>
+</div>
+
+</body>
+</html>

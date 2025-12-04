@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About - Kelompok 8 IMK">
+    <title>About Kelompok</title>
+
+    <style>
+        /* GLOBAL */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: "Trebuchet MS", Trebuchet, sans-serif;
+            background-image: url('wi.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .wrapper-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        header {
+            background: #004aad;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 25px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #55b57a;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1200px;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 280px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* FOTO KOTAK */
+        .card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            border: 3px solid #004aad;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #111418;
+        }
+
+        .info {
+            margin-top: 5px;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin: 20px 0 40px 0;
+            color: #222;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #004aad;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px 20px;
+                text-align: center;
+            }
+            
+            nav {
+                margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            nav a {
+                margin: 0 5px;
+            }
+            
+            .page-title {
+                font-size: 24px;
+                padding: 10px 20px;
+                margin: 10px 20px;
+            }
+            
+            .team-container {
+                gap: 20px;
+                padding: 0 10px;
+            }
+            
+            .card {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper-page">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Project IMK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="masalah.html">Problem Identification</a>
+            <a href="userresearch.html">User Research</a>
+            <a href="ursd.html">User Requirement Specification Document</a>
+            <a href="design.html">Design</a>
+            <a href="evaluation.html">Evaluation</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1 class="page-title">ANGGOTA KELOMPOK 8</h1>
+
+        <div class="team-container">
+
+            <!-- Anggota 1 -->
+            <div class="card">
+                <img src="ina.jpg" alt="Marthina Manggo">
+                <div class="name">Marthina Manggo</div>
+                <div class="info">NPM : 23 421 019</div>
+                <div class="info">Sistem Informasi</div>
+                <div class="info">Universitas Satya Wiyata Mandala</div>
+            </div>
+
+            <!-- Anggota 2 -->
+            <div class="card">
+                <img src="kka.jpg" alt="Laddy C. Pangkareuw">
+                <div class="name">Laddy C. Pangkareuw</div>
+                <div class="info">NPM : 21 421 008</div>
+                <div class="info">Sistem Informasi</div>
+                <div class="info">Universitas Satya Wiyata Mandala</div>
+            </div>
+
+            <!-- Anggota 3 -->
+            <div class="card">
+                <img src="novel.jpg" alt="Mingkungkon N Uropkulin">
+                <div class="name">Mingkungkon N Uropkulin</div>
+                <div class="info">NPM : 23 421 033</div>
+                <div class="info">Sistem Informasi</div>
+                <div class="info">Universitas Satya Wiyata Mandala</div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 - Kelompok 8 IMK | Sistem Informasi
+    </footer>
+</div>
+</body>
+</html>
